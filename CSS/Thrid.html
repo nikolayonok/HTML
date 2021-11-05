@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task03</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-left: 100px;
+        }
+
+        th, td {
+            border: 1px solid black;
+
+        }
+
+        .text {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="6" class="text">CATS GALLERY</th>
+    </tr>
+    <tr>
+        <th colspan="6"><img src="/icons_module_3/cat_tied_256.png" class="imageBig" id="img1"></th>
+    </tr>
+    <tr>
+        <th><img src="/icons_module_3/cat_tied_64.png" alt="/icons_module_3/cat_tied_256.png"
+                 onclick="changeImg(this.alt)"></th>
+        <th><img src="/icons_module_3/cat_box_64.png" alt="/icons_module_3/cat_box_256.png"
+                 onclick="changeImg(this.alt)"></th>
+        <th><img src="/icons_module_3/cat_cage_64.png" alt="/icons_module_3/cat_cage_256.png"
+                 onclick="changeImg(this.alt)"></th>
+        <th><img src="/icons_module_3/cat_clean_64.png" alt="/icons_module_3/cat_clean_256.png"
+                 onclick="changeImg(this.alt)"></th>
+        <th><img src="/icons_module_3/cat_eyes_64.png" alt="/icons_module_3/cat_eyes_256.png"
+                 onclick="changeImg(this.alt)"></th>
+        <th><img src="/icons_module_3/cat_purr_64.png" alt="/icons_module_3/cat_purr_256.png"
+                 onclick="changeImg(this.alt)"></th>
+    </tr>
+</table>
+
+<script>
+    const changeImg = alt => {
+        document.getElementById("img1").setAttribute("src", alt)
+    }
+</script>
+</body>
+</html>
